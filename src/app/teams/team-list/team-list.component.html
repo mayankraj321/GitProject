@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-12">
+        <button class="btn btn-success">Add Team</button>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <a href="#" *ngFor="let team of teams" class="list=group-item list-group-item-action clearfix"></a>
+        <div class="float-left">
+            <h4>{{team.name}}</h4>
+            <p>{{team.description}}</p>
+        </div>
+        <div>
+            <img [src]="team.logo" alt="logo" height="100px" width="100px">
+        </div>
+        </a>
+    </div>
+</div>
+<app-individual-team></app-individual-team>>
